@@ -1,0 +1,16 @@
+.card {
+    background: linear-gradient(black, #00eeba9c);
+    
+}
+
+.card-image {
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: large;
+}
+
+.card-content {
+    font-size: medium;
+}
