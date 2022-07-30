@@ -1,10 +1,12 @@
 .card {
     background: linear-gradient(black, #00eeba9c);
+    margin: auto;
     
+      
 }
 
 .card-image {
-    object-fit: contain;
+    
 }
 
 .card-title {
@@ -13,4 +15,14 @@
 
 .card-content {
     font-size: medium;
+}
+
+.img-card {
+    object-fit: contain;
+    height: 250px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
 }
