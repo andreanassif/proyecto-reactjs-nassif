@@ -21,4 +21,20 @@ export const getProductos= () => {
         }, 1000)
     })
 }
-       
+
+export const getProductosByTipo = (tipoId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(productos.filter(prod => prod.tipo === tipoId))
+        }, 500)
+    })
+}
+
+export const getProductosById = (id) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(productos.find(prod => prod.id === id))
+        }, 500)
+    })
+}
+

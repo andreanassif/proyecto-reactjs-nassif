@@ -1,19 +1,24 @@
 import './Item.css'
+import { Link } from 'react-router-dom'
+import { getProductos } from '../../asyncMock'
 
-const Item = ({productos})=> {
+const Item = ({})=> {
     return (
         <div class="card">
             <div class="card-image">
-                <img class="img-card" src={productos.img} alt="images"/>
+                <img class="img-card" src={getProductos.img} alt="images"/>
             </div>
             <div class="card-content">
-                <span class="card-title">{productos.nombre}</span>
-                <p>{productos.tipo}</p>
-                <p>{productos.desc}</p>
-                <span><p>${productos.precio}</p></span>
-                <p>Unidades disponibles: {productos.stock}</p>
+                <span class="card-title">{getProductos.nombre}</span>
+                <p>{getProductos.tipo}</p>
+                <p>{getProductos.desc}</p>
+                <span><p>${getProductos.precio}</p></span>
+                <p>Unidades disponibles: {getProductos.stock}</p>
             </div>
-        </div>
+            <footer className='ItemFooter'>
+                <Link to={`/detail/${getProductos.id}`} className='Option'>Ver detalle</Link>
+            </footer>
+            </div>
     )
 }
 

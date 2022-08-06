@@ -1,30 +1,23 @@
 import './Navbar.css'
-import Button from '../Button/Button'
 import CartWidget from '../CartWidget/CartWidget'
+import {Link} from 'react-router-dom'
 
 
 const Navbar = () => {
 
-    const text = 'hiciste click'
-
-    const handleClick = () => {
-        console.log(text)
-    }
-    
     return (
         <nav className="Navbar navbar navbar-dark bg-dark navbar-toggler">
             <img id="logo" class="animate__heartBeat" src="images/logolocos.jpg" alt=""/>
             <div>
-                
-                <h1>Bienvenidos a Locos en 3D!</h1>
+            <Link to='/'>ECOMMERCE LOCOS EN 3D</Link>
             </div>
-            <div>
-                <Button handleClick={handleClick} color='red'>Deco</Button>
-                <Button handleClick={handleClick} color='black'>Juegos</Button>
-                <Button handleClick={handleClick} color='blue'>Soportes</Button>
-                <Button handleClick={handleClick} color='violet'>Lapiceros</Button>
-                <Button handleClick={handleClick} color='gold'>Mates</Button>
-                <Button handleClick={handleClick} color='pink'>Otros</Button>
+            <div className='Tipo'>
+                <Link to='/tipo/Deco' className="Option">Deco</Link>
+                <Link to='/tipo/Juegos' className="Option">Juegos</Link>
+                <Link to='/tipo/Soportes' className="Option">Soportes</Link>
+                <Link to='/tipo/Lapiceros' className="Option">Lapiceros</Link>
+                <Link to='/tipo/Mates' className="Option">Mates</Link>
+                <Link to='/tipo/Otros' className="Option">Otros</Link>
             </div>
             <CartWidget />
         </nav>

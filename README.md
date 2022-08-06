@@ -1,3 +1,54 @@
+# LOCOS EN 3D
+
+Este es mi proyecto para el curso de "REACT" de Coderhouse en el año 2022.
+El mismo a su vez involucra un emprendimiento personal avocado al diseño e impresiones en 3D.
+
+## LOGO
+
+![](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/USUARIO/Desktop/React%20JS/Proyecto%20ReactJS%20Nassif%20Andrea/proyecto-nassif/public/images/logolocos.jpg?version%3D1659814701578)
+
+## INSTALACION LOCAL
+
+$ git clone https://github.com/andreanassif/proyecto-reactjs-nassif
+
+$ cd proyecto-nassif
+
+$ npm install
+
+$ npm start
+
+## RUTAS DEFINIDAS
+
+La ruta "/" (por default) muestra el título de bienvenida y el listado de todos los productos (ItemListContainer).
+
+La ruta "/tipo/:tipoId" muestra los productos filtador según cada una de las 6 categorías existentes: Deco, Juegos, Soportes, Lapiceros, Mates, Otros. Es el ItemListContainer + el filtro.
+
+
+
+La ruta "/detail/:productId" muestra el detalle del producto seleccionado, ubicando el producto mediante su id.
+
+La ruta "*" define que toda otra ruta a la que se quiera acceder mediante el navegador del browser (y no sea alguna de las anteriores), devuelva "404 - página no encontrada".
+
+Los "NavLinks" se encuentran incorporados en NavLinks.js (categorías)
+
+## DETALLES ADICIONALES
+
+Se hace uso de las siguientes herramientas:
+
+BOOTSTRAP para ciertos estilos
+
+ANIMATE.CSS para ciertas animaciones
+
+CLOUDINARY
+
+## SCREENSHOTS
+
+## DEMO EN FORMATO GIF
+
+## AUTHORS
+
+ANDREA NASSIF - @nassif.turkish
+<!-- 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +119,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->
