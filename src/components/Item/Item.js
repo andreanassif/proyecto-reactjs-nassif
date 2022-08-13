@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 //import { getProductos } from '../../asyncMock';
 
 const Item = ({productos})=> {
+
+    const handleClick = (e) => {
+        e.stopPropagation()
+        console.log('click en item')
+    }
+
     return (
-        <div class="card">
+        <div class="card" onClick={handleClick}>
             <div class="card-image">
                 <img class="img-card" src={productos.img} alt="images" />
             </div>

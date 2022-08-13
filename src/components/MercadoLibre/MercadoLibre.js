@@ -1,9 +1,10 @@
-import { useState, /* useEffect */} from 'react'
+import { useState, useEffect} from 'react'
 
 const MercadoLibre = () => {
     const [productos, setProductos] = useState([])
     const [input, setInput] = useState('')
     const [loading, setLoading] = useState(false)
+    console.log(productos)
 
 //     useEffect(() => {
  //        fetch('https://api.mercadolibre.com/sites/MLA/search?q=auto')
@@ -15,23 +16,23 @@ const MercadoLibre = () => {
 
 const handleOnSubmit = (e) => {
     e.preventDefault()
-    setLoading(true)
-    fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${input}`)
-    .then(response => response.json())
-    .then(json => {
-        setProductos(json.results)
+//    setLoading(true)
+//    fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${input}`)
+//    .then(response => response.json())
+//    .then(json => {
+//        setProductos(json.results)
     
-    }).catch(error=> {
-        console.log(error)
-    }).finally(() => {
-        setLoading(false)
-    })
+//    }).catch(error=> {
+//        console.log(error)
+ //   }).finally(() => {
+ //       setLoading(false)
+ //   })
 
     }
 
-    if (loading) {
-        return <h1>Cargando...</h1>
-    }
+//    if (loading) {
+//        return <h1>Cargando...</h1>
+//    }
 
     return(
         <>
