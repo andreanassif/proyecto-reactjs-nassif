@@ -1,17 +1,17 @@
-import { useState, useEffect} from 'react'
+import { useState, /* useEffect */} from 'react'
 
 const MercadoLibre = () => {
     const [productos, setProductos] = useState([])
     const [input, setInput] = useState('')
     const [loading, setLoading] = useState(false)
 
-    // useEffect(() => {
-    //     fetch('https://api.mercadolibre.com/sites/MLA/search?q=auto')
-    //         .then(response => response.json())
-    //         .then(json => {
-    //             setProducts(json.results)
-    //         })
-    // }, [])
+//     useEffect(() => {
+ //        fetch('https://api.mercadolibre.com/sites/MLA/search?q=auto')
+//             .then(response => response.json())
+//             .then(json => {
+//                 setProductos(json.results)
+//             })
+//     }, [])
 
 const handleOnSubmit = (e) => {
     e.preventDefault()
@@ -53,3 +53,5 @@ const handleOnSubmit = (e) => {
         </>
     )
 }
+
+export default MercadoLibre

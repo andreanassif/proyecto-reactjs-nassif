@@ -5,11 +5,12 @@ import {useParams} from 'react-router-dom'
 
 import ItemList from '../ItemList/ItemList'
 
+
 const ItemListContainer = ({ greeting }) => {
 
     const [productos, setProductos] = useState([])
 
-    const {tipoId} = useParams
+    const {tipoId} = useParams()
 
     useEffect(() => {
       const asyncFunction = tipoId ? getProductosByTipo : getProductos
@@ -35,9 +36,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <>
-            <h3> 
-                {greeting}
-            </h3>
+            <h3>{greeting}</h3>
             <ItemList productos={productos}/>
         </>
     )

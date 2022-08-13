@@ -1,5 +1,14 @@
 const productos = [
-    {id: 1, nombre: "Velador Espiraldo Mod7", tipo: "deco", cantidad: 1, desc: "Velador Espiralado. Varios colores disponibles.", precio: 1900, img: 'https://res.cloudinary.com/dhndpus6m/image/upload/v1659131863/Locosen3D/velador-blanco-modelo7_vo5kef.jpg', stock: 10},
+    {
+        id: 1, 
+        nombre: "Velador Espiraldo Mod7", 
+        tipo: "deco", 
+        cantidad: 1, 
+        desc: "Velador Espiralado. Varios colores disponibles.", 
+        precio: 1900, 
+        img: 'https://res.cloudinary.com/dhndpus6m/image/upload/v1659131863/Locosen3D/velador-blanco-modelo7_vo5kef.jpg', 
+        stock: 10
+    },
     {id: 2, nombre: "Velador Espiraldo Mod3", tipo: "deco", cantidad: 1, desc: "Velador Espiralado. Varios colores disponibles.", precio: 1900, img: 'https://res.cloudinary.com/dhndpus6m/image/upload/v1659131863/Locosen3D/velador-on-fucsia-modelo3_gb9xaq.jpg', stock: 10},
     {id: 3, nombre: "Velador Espiraldo Mod33", tipo: "deco", cantidad: 1, desc: "Velador Espiralado. Varios colores disponibles.", precio: 1900, img: 'https://res.cloudinary.com/dhndpus6m/image/upload/v1659131863/Locosen3D/velador-naranja-modelo33_vtknpl.jpg', stock: 10},
     {id: 4, nombre: "Velador Espiraldo Mod5", tipo: "deco", cantidad: 1, desc: "Velador Espiralado. Varios colores disponibles.", precio: 1900, img: 'https://res.cloudinary.com/dhndpus6m/image/upload/v1659131863/Locosen3D/velador-on-azul-modelo5_zk1lwl.jpg', stock: 10},

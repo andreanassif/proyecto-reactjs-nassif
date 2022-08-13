@@ -1,6 +1,8 @@
+import React from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import {Link} from 'react-router-dom'
+//import {getProductosByTipo} from '../asyncMock.js'
 
 
 const Navbar = () => {
@@ -11,7 +13,7 @@ const Navbar = () => {
             <div>
             <Link to='/'>ECOMMERCE LOCOS EN 3D</Link>
             </div>
-            <div className='Tipo'>
+            <div className='tipo'>
                 <Link to='/tipo/Deco' className="Option">Deco</Link>
                 <Link to='/tipo/Juegos' className="Option">Juegos</Link>
                 <Link to='/tipo/Soportes' className="Option">Soportes</Link>
