@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import {Link, NavLink} from 'react-router-dom'
@@ -17,12 +17,12 @@ const Navbar = () => {
             </Link>
             </div>
             <div className='tipo'>
-                <NavLink to='/tipo/Deco' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Deco</NavLink>
-                <NavLink to='/tipo/Juegos' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Juegos</NavLink>
-                <NavLink to='/tipo/Soportes' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Soportes</NavLink>
-                <NavLink to='/tipo/Lapiceros' cclassName={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Lapiceros</NavLink>
-                <NavLink to='/tipo/Mates' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mates</NavLink>
-                <NavLink to='/tipo/Otros' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Otros</NavLink>
+                <NavLink to='/tipo/deco' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Deco</NavLink>
+                <NavLink to='/tipo/juego' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Juegos</NavLink>
+                <NavLink to='/tipo/soportes' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Soportes</NavLink>
+                <NavLink to='/tipo/lapiceros' cclassName={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Lapiceros</NavLink>
+                <NavLink to='/tipo/mate' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mates</NavLink>
+                <NavLink to='/tipo/veladores' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Veladores</NavLink>
             </div>
             <CartWidget />
         </nav>
