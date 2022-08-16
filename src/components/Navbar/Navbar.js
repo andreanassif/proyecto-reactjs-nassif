@@ -1,8 +1,6 @@
-//import React from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import {Link, NavLink} from 'react-router-dom'
-//import {getProductosByTipo} from '../asyncMock.js'
 
 
 const Navbar = () => {
@@ -10,7 +8,7 @@ const Navbar = () => {
     return (
         
         <nav className="Navbar navbar navbar-dark bg-dark navbar-toggler">
-            <img id="logo" class="animate__heartBeat" src="images/logolocos.jpg" alt=""/>
+            <img id="logo" class="animate__heartBeat" src="https://res.cloudinary.com/dhndpus6m/image/upload/v1659133158/Locosen3D/logolocos_x6ztl9.jpg" alt=""/>
             <div>
             <Link to='/'>
                 ECOMMERCE LOCOS EN 3D

@@ -1,20 +1,26 @@
-.card {
+.CardItem {
     background: rgb(2,0,36);
-    background: linear-gradient(129deg, rgba(2,0,36,1) 0%, rgba(36,156,82,1) 62%, rgba(0,189,255,1) 100%);    
-      
+    background: linear-gradient(129deg, rgba(2,0,36,1) 0%, rgba(36,156,82,1) 62%, rgba(0,189,255,1) 100%);
+    width: 600px;
+    padding: 30px;
+    margin: 30px;
 }
 
-
-.card-title {
-    font-size: large;
+.ItemHeader {
+    font-size: 30px;
 }
 
-.card-content {
-    font-size: medium;
+p {
+    font-size: 20px;
 }
-
 .img-card {
-    object-fit: contain;
     height: 250px;
+}
+
+.ItemList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border-radius: 25px;
 }
 

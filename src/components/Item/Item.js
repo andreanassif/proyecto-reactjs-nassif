@@ -1,8 +1,7 @@
 import './Item.css';
 import { Link } from 'react-router-dom';
-//import { getProductos } from '../../asyncMock';
 
-const Item = ({id, nombre, img, precio, tipo, desc, stock})=> {
+const Item = ({id, nombre, img, precio})=> {
 
     const handleClick = (e) => {
         e.stopPropagation()
@@ -10,22 +9,26 @@ const Item = ({id, nombre, img, precio, tipo, desc, stock})=> {
     }
 
     return (
-        <div class="card" onClick={handleClick}>
-            <div class="card-image">
-                <img class="img-card" src={img} alt="images" />
-            </div>
-            <div class="card-content">
-                <span class="card-title">{nombre}</span>
-                <p>{tipo}</p>
-                <p>{desc}</p>
-                <span><p>${precio}</p></span>
-                <p>Unidades disponibles: {stock}</p>
-            </div>
+        <article className="CardItem" onClick={handleClick}>
+            <header className="Header">
+                <h2 className="ItemHeader">
+                    {nombre}
+                </h2>
+            </header>
+            <picture>
+                <img src={img} alt={nombre} className="ItemImg"/>
+            </picture>
+            <section>
+                <p className="Info">
+                    Precio: ${precio}
+                </p>
+            </section>           
             <footer className='ItemFooter'>
                 <Link to={`/detail/${id}`} className='Option'>Ver detalle</Link>
             </footer>
-            </div>
-    );
+        </article>
+    )
+
 };
 
 export default Item;

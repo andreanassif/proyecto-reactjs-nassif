@@ -1,8 +1,8 @@
 import './ItemListContainer.css'
 import {useState, useEffect} from 'react'
 import { getProducts, getProductsByTipo } from '../../asyncMock'
-import {useParams} from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
+import {useParams} from 'react-router-dom'
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -12,7 +12,18 @@ const ItemListContainer = ({ greeting }) => {
     
     const {tipoId} = useParams()
 
+/*     useEffect(() => {
 
+        const onResize = () => {
+            console.log('cambio tamañno ventana')
+        }
+
+        window.addEventListener('resize', onResize )
+
+        return () => window.removeEventListener('resize', onResize)
+
+    }, [])
+ */
     useEffect(() => {
       setLoading(true)
       const asyncFunction = tipoId ? getProductsByTipo : getProducts

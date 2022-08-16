@@ -43,8 +43,15 @@ CLOUDINARY
 
 ## SCREENSHOTS
 
-## DEMO EN FORMATO GIF
+https://res.cloudinary.com/dhndpus6m/image/upload/v1660596995/Locosen3D/Screenshot_01_deno9l.jpg
 
+https://res.cloudinary.com/dhndpus6m/image/upload/v1660596995/Locosen3D/Screenshot_02_quwvuz.jpg
+
+https://res.cloudinary.com/dhndpus6m/image/upload/v1660596995/Locosen3D/Screenshot_03_cn1yse.jpg
+## DEMO EN FORMATO GIF
+https://res.cloudinary.com/dhndpus6m/video/upload/v1660596740/Locosen3D/gif1_iqm0bp.mp4
+
+https://res.cloudinary.com/dhndpus6m/video/upload/v1660596740/Locosen3D/gif_qlxnt3.mp4
 ## AUTHORS
 
 ANDREA NASSIF - @nassif.turkish
