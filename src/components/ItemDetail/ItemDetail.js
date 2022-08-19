@@ -5,11 +5,16 @@ import Counter from '../Counter/Counter'
 import CartContext from '../../context/CartContext'
 
 const ItemDetail = ({ id, nombre, img, tipo, desc, precio, stock }) => {
+    
     const [quantityToAdd, setQuantityToAdd] = useState(0)
 
     const { addItem, getProductQuantity } = useContext(CartContext)
 
+    console.log(quantityToAdd)
+
     const handleOnAdd = (quantity) => {
+        console.log('agregue al carrito')
+        console.log('quantity')
         setQuantityToAdd(quantity)
 
         const productToAdd = {
