@@ -41,6 +41,8 @@ ANIMATE.CSS para ciertas animaciones
 
 CLOUDINARY
 
+FIREBASE/FIRESTORAGE
+
 ## SCREENSHOTS
 
 https://res.cloudinary.com/dhndpus6m/image/upload/v1660596995/Locosen3D/Screenshot_01_deno9l.jpg
