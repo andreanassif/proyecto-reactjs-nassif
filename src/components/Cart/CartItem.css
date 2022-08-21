@@ -1,0 +1,20 @@
+.CartItem {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.InfoCart {
+    margin-right: 50px;
+}
+
+.CartItemContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderCartItem {
+    display: flex;
+    justify-content: space-evenly;
+}
+

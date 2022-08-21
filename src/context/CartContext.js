@@ -4,7 +4,6 @@ const CartContext = createContext()
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    console.log(cart)
 
     const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
@@ -26,37 +25,54 @@ export const CartContextProvider = ({ children }) => {
         }
     }
 
+    const getQuantity = () => {
+        let accu = 0
+        cart.forEach(prod=> {
+            accu += prod.quantity
+        })
+        return accu
+    } //ok
+
     const clearCart = () => {
         setCart([])
-    }
+    } //ok
 
     const removeItem = (id) => {
         const newCartWithoutProduct = cart.filter(prod => prod.id !== id)
         setCart(newCartWithoutProduct)
-    }
+    } //ok
 
     const isInCart = (id) => {
         return cart.some(prod => prod.id === id)
-    }
+    } //ok
 
-    const getQuantity = () => {
+    const getTotal = ()=> {
         let accu = 0
 
-        cart.forEach(prod => {
-        accu += prod.quantity
+        cart.forEach(prod=> {
+            accu += prod.quantity * prod.precio
         })
+    } //ok
 
-        return accu
-    }
 
     const getProductQuantity = (id) => {
         const product = cart.find(prod => prod.id === id)
 
         return product?.quantity
-    }
+    } //ok
 
     return (
-        <CartContext.Provider value={{ cart, addItem, getQuantity, isInCart, removeItem, clearCart, getProductQuantity }}>
+        <CartContext.Provider 
+                value={{ 
+                    cart, 
+                    addItem,
+                    isInCart,
+                    removeItem,
+                    clearCart,
+                    getProductQuantity,
+                    getQuantity,
+                    getTotal }}
+        >
             {children}
         </CartContext.Provider>
     )
