@@ -1,5 +1,5 @@
 import './ItemDetail.css'
-import { useState, useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Counter from '../Counter/Counter'
 import CartContext from '../../context/CartContext'

@@ -1,9 +1,31 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import {Link, NavLink} from 'react-router-dom'
+import {collection, getDocs} from 'firebase/firestore'
+import { useState, useEffect} from 'react'
+import {dbase} from '../../services/firebase'
+
 
 
 const Navbar = () => {
+
+    const [tipos, setTipos] = useState([])
+
+    useEffect(()=> {
+        const collectionTipos = collection(dbase, 'tipo')
+
+        getDocs(collectionTipos).then((response) => {
+        const tipos = response.docs.map((tipos)=> {
+            return {
+                id: tipos.id,
+                ...tipos.data()
+            }
+        })
+        setTipos(tipos)
+        })
+    },[])
+
+    console.log('tipo', tipos)
 
     return (
         

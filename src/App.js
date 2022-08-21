@@ -5,6 +5,9 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { CartContextProvider } from './context/CartContext'
 import {NotificationProvider} from './notification/Notification'
+import Cart from './components/Cart/Cart'
+
+
 function App() {
 
   return (
@@ -18,6 +21,7 @@ function App() {
               <Route path='/tipo/:tipoId' element={<ItemListContainer greeting='Listado filtrado'/>} />	            
               <Route path='/detail/:productId' element={<ItemDetailContainer />} />  	            
               <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+              <Route path='/cart' element={<Cart />}/>
             </Routes>
           </BrowserRouter>
         </CartContextProvider>

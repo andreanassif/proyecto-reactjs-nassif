@@ -18,7 +18,7 @@ const ItemListContainer = ({ greeting }) => {
 
       const collectionRef = !tipoId
           ? collection(dbase, 'ItemList')
-          : query(collection(dbase, 'ItemList'), where('tipo', '==', 'tipoId'))
+          : query(collection(dbase, 'ItemList'), where( 'tipo', '==', tipoId))
 
         getDocs(collectionRef).then(response => {
             const prodsAdapted = response.docs.map(doc => {
