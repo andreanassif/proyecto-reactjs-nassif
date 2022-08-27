@@ -1,6 +1,6 @@
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { dbase } from "./index";
-import { createProductFromFirestore } from '../../adapters/prodsAdapted'
+import { createProductFromFirestore } from '../../adapters/prodsAdapted';
 
 export const getProducts = (tipoId) => {
     const collectionRef = !tipoId
@@ -8,7 +8,7 @@ export const getProducts = (tipoId) => {
     : query(collection(dbase, 'ItemList'), where('tipo', '==', tipoId))
 
     return getDocs(collectionRef).then(response=> {
-        const prodsAdapted = response.docs.mapr(doc => {
+        const prodsAdapted = response.docs.map(doc => {
             return createProductFromFirestore(doc)
         })
         return prodsAdapted

@@ -1,20 +1,29 @@
 .CartItem {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: auto;
 }
 
 .InfoCart {
-    margin-right: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .CartItemContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .HeaderCartItem {
     display: flex;
     justify-content: space-evenly;
+}
+
+.ButtonCartItem {
+    width: auto;
+    border-radius: 10px;
+    background-color: rgba(43, 226, 195, 0.938);
+
 }
 

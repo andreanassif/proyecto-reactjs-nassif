@@ -1,3 +1,4 @@
+import './CartItem.css'
 import {useContext} from "react";
 import CartContextProvider from "../../context/CartContext";
 
@@ -23,14 +24,14 @@ const CartItem = ({id, nombre, quantity, precio}) => {
                     Cantidad: {quantity}
                 </p>
                 <p className="InfoCart" >
-                    Precio unitario: {precio}
+                    Precio unitario: ${precio}
                 </p>
             </section>
             <footer className="CartItemFooter">
                 <p className="InfoCartFooter">
                     Subtotal: ${precio * quantity}
                 </p>
-                <button className="ButtonCartItem" onClick={()=> handleRemove(id)}> X </button>
+                <button className="ButtonCartItem" onClick={()=> handleRemove(id)}>x</button>
             </footer>
         </>
     )

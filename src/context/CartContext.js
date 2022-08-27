@@ -52,8 +52,11 @@ export const CartContextProvider = ({ children }) => {
         cart.forEach(prod=> {
             accu += prod.quantity * prod.precio
         })
+
+        return accu 
     } //ok
 
+    
 
     const getProductQuantity = (id) => {
         const product = cart.find(prod => prod.id === id)

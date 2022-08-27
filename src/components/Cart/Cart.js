@@ -1,3 +1,4 @@
+import './CartItem.css'
 import { useContext } from 'react'
 import CartContextProvider from '../../context/CartContext'
 import CartItem from '../Cart/CartItem'
@@ -26,7 +27,7 @@ const Cart = () => {
                         ))}
                         <div className='cartBtn'>
                             <h2>Total: ${total}</h2>
-                            <button onClick={clearCart}>Vaciar carro</button>
+                            <button className='ButtonCartItem' onClick={clearCart}>Vaciar carro</button>
                             <Link to='/checkout' className='Option'>Checkout</Link>
                         </div>
                     </div>
